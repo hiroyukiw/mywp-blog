@@ -20,6 +20,7 @@ wp-content/plugins/*
 
 # 特定のテーマを除外
 wp-content/themes/twenty*/
+wp-content/themes/index.php
 
 # nodeの依存ファイルを除外
 node_modules/
