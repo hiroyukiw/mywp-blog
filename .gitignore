@@ -7,17 +7,6 @@
 !README.md
 !/pardot_post/
 
-wp-admin
-# wp-content/index.php
-wp-content/languages
-wp-includes
-wp-*.php
-index.php
-license.txt
-readme.html
-xmlrpc.php
-wp-config.php
-
 # 一部を除くwp-content以下のディレクトリを除外
 wp-content/*
 ## 対象外のディレクトリ
@@ -39,7 +28,3 @@ node_modules/
 *.log
 *.sql
 *.sqlite
-
-Thumbs.db
-.DS_Store
-*.log
