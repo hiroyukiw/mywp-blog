@@ -8,7 +8,7 @@
 !/pardot_post/
 
 wp-admin
-wp-content/index.php
+# wp-content/index.php
 wp-content/languages
 wp-includes
 wp-*.php
