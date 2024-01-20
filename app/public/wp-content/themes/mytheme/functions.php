@@ -15,8 +15,8 @@ add_action( 'after_setup_theme', 'mytheme_support' );
 function mytheme_enqueue() {
 
 	// テーマのCSS（style.css）をフロントに読み込む
-	wp_enqueue_style( 
-		'mytheme-style', 
+	wp_enqueue_style(
+		'mytheme-style',
 		get_stylesheet_uri(),
 		array(),
 		filemtime( get_theme_file_path( 'style.css' ) )
@@ -120,7 +120,7 @@ add_action( 'init', 'mytheme_block_pattern' );
 
 // 使用するブロック
 // function mytheme_allowed_block_types ( $allowed_block_types, $editor_context ) {
-// 
+//
 // 	if ( $editor_context->post  ) {
 // 		$allowed_block_types = array(
 // 			'core/paragraph',
@@ -128,7 +128,7 @@ add_action( 'init', 'mytheme_block_pattern' );
 // 			'core/image'
 // 		);
 // 	}
-// 
+//
 // 	return $allowed_block_types;
 // }
 // add_filter( 'allowed_block_types_all', 'mytheme_allowed_block_types', 10, 2 );
@@ -190,3 +190,5 @@ function mytheme_meta() {
 	}
 }
 add_action('wp_head', 'mytheme_meta');
+
+add_filter('automatic_updates_is_vcs_checkout', '__return_false', 1 );
